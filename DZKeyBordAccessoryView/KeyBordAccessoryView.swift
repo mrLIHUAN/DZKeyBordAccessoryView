@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SnapKit
 /**这个延展没有用到在这里面*/
 private var defaultInterval = "defaultInterval"
 extension UITextField{
