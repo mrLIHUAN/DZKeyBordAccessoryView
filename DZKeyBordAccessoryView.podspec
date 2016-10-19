@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'Foundation'
   #s.libraries = 'z', 'c++', 'sqlite3'
   s.dependencies = {
-   'SnapKit' => ['0.19.1']
+   'SnapKit' => ['3.0.2']
    }
 end 
