@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|  
-  s.name             = "KeyBordAccessoryView" 
+  s.name             = "DZKeyBordAccessoryView" 
   s.version          = "1.0.1" 
   s.summary          = "键盘上方的辅助视图"  
-  s.homepage         = "https://github.com/mrLIHUAN/KeyBordAccessoryView"   
+  s.homepage         = "https://github.com/mrLIHUAN/DZKeyBordAccessoryView"   
   s.license          = 'MIT'  
   s.author           = { "mrLIHUAN" => "1139116598@qq.com" }  
-  s.source           = { :git => "https://github.com/mrLIHUAN/KeyBordAccessoryView.git", :tag => s.version.to_s }   
+  s.source           = { :git => "https://github.com/mrLIHUAN/DZKeyBordAccessoryView.git", :tag => s.version.to_s }   
   s.requires_arc = true
-  s.source_files = 'KeyBordAccessoryView/*.*', 'KeyBordAccessoryView/**.*'
+  s.source_files = 'DZKeyBordAccessoryView/*.*', 'DZKeyBordAccessoryView/**.*'
   #s.default_subspec = 'AliPay15.1.6', 'SDK1.6.2', 'pic', 'Code'
   s.ios.deployment_target = '8.0'
   s.frameworks = 'UIKit'
