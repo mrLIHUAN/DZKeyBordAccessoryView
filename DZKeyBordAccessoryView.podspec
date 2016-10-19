@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'DZKeyBordAccessoryView/*.*'
   s.ios.deployment_target = '8.0'
-  s.frameworks = 'UIKit'
-  s.libraries = 'z', 'c++', 'sqlite3'
+  s.frameworks = 'UIKit', 'Foundation'
+  #s.libraries = 'z', 'c++', 'sqlite3'
   s.dependencies = {
    'SnapKit' => ['0.19.1']
    }
