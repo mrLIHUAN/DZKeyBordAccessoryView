@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author           = { "mrLIHUAN" => "1139116598@qq.com" }  
   s.source           = { :git => "https://github.com/mrLIHUAN/DZKeyBordAccessoryView.git", :tag => s.version.to_s }   
   s.requires_arc = true
-  s.source_files = 'DZKeyBordAccessoryView/*.*'
+  s.source_files = 'DZKeyBordAccessoryView/*.swift'
   s.ios.deployment_target = '8.0'
   s.frameworks = 'UIKit', 'Foundation'
   #s.libraries = 'z', 'c++', 'sqlite3'
