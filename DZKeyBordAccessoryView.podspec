@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name             = "DZKeyBordAccessoryView" 
-  s.version          = "1.0.2" 
+  s.version          = "1.0.3" 
   s.summary          = "键盘上方的辅助视图"  
   s.homepage         = "https://github.com/mrLIHUAN/DZKeyBordAccessoryView"   
   s.license          = 'MIT'  
