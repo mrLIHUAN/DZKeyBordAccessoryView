@@ -33,12 +33,12 @@ extension UITextField{
 }
 
 /**辅助视图的类型*/
-enum KeyBordAccessoryViewStyle{
+public enum KeyBordAccessoryViewStyle{
     case accessoryView //辅助视图
     case textBox       //有一个UITextField
 
 }
-class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
+public class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
 //取消
     var canNoInPut = UIButton()
 //完成
@@ -106,7 +106,7 @@ class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
         }
     }
     
-    init(frame: CGRect,middleTitle : String,style:KeyBordAccessoryViewStyle) {
+    public init(frame: CGRect,middleTitle : String,style:KeyBordAccessoryViewStyle) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.whiteColor()
         
@@ -128,7 +128,7 @@ class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
     
     /**+++++++++++++++++KeyBordAccessoryViewStyle.textBox+++++++++++++++++++++++++*/
     /**完成*/
-    private func creatDone(){
+    public func creatDone(){
         
         self.addSubview(DoneBtn)
         DoneBtn.snp_makeConstraints { (make) -> Void in
@@ -147,7 +147,7 @@ class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
     
     
     /**textField*/
-   private func creatTextField(){
+   public func creatTextField(){
     textfield.layer.cornerRadius = 5
     textfield.layer.borderColor = UIColor.grayColor().CGColor
     textfield.layer.borderWidth = 1
@@ -164,7 +164,7 @@ class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
     
     }
 
-    func textFieldDidEndEditing(textField: UITextField) {
+   public func textFieldDidEndEditing(textField: UITextField) {
         
         var nextRes = self.nextResponder()
         
@@ -304,7 +304,7 @@ class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
     }
     
     /**两个btn的点击事件*/
-    func actionBtn(btn : UIButton){
+    public func actionBtn(btn : UIButton){
         if(btn == canNoInPut){
         
         print("取消")
@@ -379,7 +379,7 @@ class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
     
     
      /**////////////////////这是KeyBordAccessoryViewStyle.accessoryView结束////////////*/
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
