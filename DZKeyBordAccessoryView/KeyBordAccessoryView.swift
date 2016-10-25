@@ -53,13 +53,13 @@ public class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
     
     
     /**“取消”字体的颜色*/
-    var canNoInputTitleColor : UIColor!{
+  public var canNoInputTitleColor : UIColor!{
         didSet{
             canNoInPut.setTitleColor(canNoInputTitleColor, forState: UIControlState.Normal)
         }
     }
     /**“取消”背景颜色*/
-    var canNoInputBGColor : UIColor!{
+  public var canNoInputBGColor : UIColor!{
         didSet{
             canNoInPut.backgroundColor = canNoInputBGColor
         }
@@ -70,7 +70,7 @@ public class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
     
     
     /**“确定”背景颜色*/
-    var canSureInputBGColor : UIColor!{
+   public var canSureInputBGColor : UIColor!{
         didSet{
             canSureInPut.backgroundColor = canSureInputBGColor
             
@@ -80,7 +80,7 @@ public class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
     }
     
     /**“确定”字体的颜色*/
-    var canSureInputTitleColor : UIColor!{
+   public var canSureInputTitleColor : UIColor!{
         didSet{
             canSureInPut.setTitleColor(canSureInputTitleColor, forState: UIControlState.Normal)
             DoneBtn.setTitleColor(canSureInputTitleColor, forState: UIControlState.Normal)
@@ -89,7 +89,7 @@ public class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
 
 
     /**“中间”字体的颜色*/
-    var middleTitleColor : UIColor!{
+   public var middleTitleColor : UIColor!{
         didSet{
             
         label.textColor = middleTitleColor
@@ -98,7 +98,7 @@ public class KeyBordAccessoryView: UIView ,UITextFieldDelegate{
     }
     
     /**“确定”“取消”字体大小 */
-    var fontSize : UIFont!{
+   public var fontSize : UIFont!{
         didSet{
             canNoInPut.titleLabel?.font = fontSize
             canSureInPut.titleLabel?.font = fontSize
